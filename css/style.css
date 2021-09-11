@@ -1,0 +1,190 @@
+/***********desktop structural css*************/
+
+@media screen and (min-width:981px) {
+	#resume_card {
+		float: right;
+		right: 10px;
+		top: 20px;
+		
+		position: fixed;
+		border-radius: 10px;
+		box-shadow: 0px 5px 10px 0px lightgray;
+	}
+	
+	#resume_card footer{
+		border-radius: 0px 0px 10px 10px;
+	}
+	
+	#resume_section {
+		/* 布局 */
+		position: absolute;
+		float: left;
+		top: 20px;
+		left: 10px;
+		width: 80%;
+		text-align: center;
+	}
+	
+	#resume_detial{
+		width: 80%;
+		margin: 0 auto;
+		background-color: white;
+		box-shadow: 0px 5px 10px 5px lightgray;
+		border-radius: 10px;
+	}
+	
+	/* 表格 */
+	#resume_detial td, th {
+		padding: 5px 10px;
+	}
+	
+	.slide_float{
+		/* 布局 */
+		position: fixed;
+		float: right;
+		bottom: 30px;
+		right: 10px;
+		text-align: center;
+		
+		/* 颜色 */
+		background-color: white;
+	}
+	
+	.slide_float ul{
+		list-style: none;
+		
+		padding: 0;
+		margin: 0;
+		
+		box-shadow: 0px 5px 10px 0px lightgray;
+	}
+	
+	.slide_float li{
+		width: 40px;
+		height: 40px;
+		padding: 10px;
+	}
+	
+	.slide_float li:hover{
+		background-color: lightgray;
+	}
+	
+	.slide_float img{
+		width: 100%;
+	}
+	
+	#mywork img {
+		max-width: 600px;
+	}
+	
+	/* 隐藏分割条 */
+	.split_line {
+		display: none;
+	}
+}
+
+/***********mobile structural css*************/
+
+@media screen and (max-width:980px){
+	/* 简介详情 */
+	#resume_detial {
+		/* 布局 */
+		padding: 10px 5px;
+	}
+	
+	/* 表格 */
+	#resume_detial td, th {
+		padding: 1px 5px;
+	}
+	
+	#mywork img {
+		max-width: 100%;
+	}
+	
+	/* 隐藏导航 */
+	.slide_float {
+		display: none;
+	}
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+
+	background-color: whitesmoke;
+}
+
+/* 卡片 */
+#resume_card {
+	/* 颜色 */
+	background-color: powderblue;
+	/* 布局 */
+	text-align: center;
+	padding: 20px 0 0 0;
+}
+
+/* 个人特性 */
+#resume_card  p{
+	/* 颜色 */
+	color: gray;
+	/* 字体大小 */
+	font-size: 16px;
+	/* 布局 */
+	max-width: 80%;
+	margin: 10px auto;
+}
+
+/* 卡片头像 */
+#resume_card img{
+	/* 大小 */
+	width: 150px;
+	height: 150px;
+	/* 圆角 */
+	border-radius: 50%;
+	/* 无法显示时的背景色 */
+	background-color: khaki;
+}
+
+/* 卡片脚标 */
+#resume_card footer{
+	/* 颜色 */
+	background-color: white;
+	/* 布局 */
+	padding: 20px 0;
+}
+
+#resume_section{
+	color: gray;
+	text-align: center;
+}
+
+/* 简介详情 */
+#resume_detial {
+	/* 颜色 */
+	background-color: white;
+	/* 布局 */
+	padding: 5px 20px;
+	text-align: left;
+}
+
+/* 分割线 */
+#resume_detial hr{
+	border: none;
+	border-top: 1px #B0E0E6 solid;
+	margin: 5px 10px;
+}
+
+/* 分割线 */
+#resume_detial p{
+	margin: 20px 10px;
+}
+
+#education img{
+	width: 300px;
+	max-width: 80%;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 20px;
+	background-color: #4183C4;
+}
