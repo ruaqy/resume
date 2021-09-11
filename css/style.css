@@ -6,6 +6,8 @@
 		right: 10px;
 		top: 20px;
 		
+		width: 220px;
+		
 		position: fixed;
 		border-radius: 10px;
 		box-shadow: 0px 5px 10px 0px lightgray;
@@ -77,6 +79,10 @@
 		max-width: 600px;
 	}
 	
+	#resume_card h1, p{
+		margin: 20px auto;
+	}
+	
 	/* 隐藏分割条 */
 	.split_line {
 		display: none;
@@ -86,6 +92,14 @@
 /***********mobile structural css*************/
 
 @media screen and (max-width:980px){
+	#resume_card img{
+		margin: 30% auto 10% auto;
+	}
+	
+	#resume_card h1, p{
+		margin: 8% auto;
+	}
+	
 	/* 简介详情 */
 	#resume_detial {
 		/* 布局 */
@@ -132,6 +146,9 @@ body{
 	font-size: 16px;
 	/* 布局 */
 	max-width: 80%;
+}
+
+#resume_card footer p{
 	margin: 10px auto;
 }
 
